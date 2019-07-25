@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ar.developments.taptoplant.Home_page"
+    android:background="#6EC05D">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".28"
+        android:background="#6EC05D"
+        android:fitsSystemWindows="true"
+
+
+        android:id="@+id/hom_div1"
+        android:onClick="tap_fun">
+
+
+
+        <!--<pl.bclogic.pulsator4droid.library.PulsatorLayout-->
+            <!--android:id="@+id/pulsator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:pulse_count="3"-->
+            <!--app:pulse_duration="10000"-->
+            <!--app:pulse_repeat="0"-->
+            <!--app:pulse_color="@color/colorAccent"-->
+            <!--app:pulse_startFromScratch="false"-->
+            <!--app:pulse_interpolator="Linear">-->
+        <!--</pl.bclogic.pulsator4droid.library.PulsatorLayout>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".28"
+            android:id="@+id/top_frame1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:text="Login / Register"
+                        android:id="@+id/butn1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="register_fun"
+                        android:background="@drawable/border_button"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".5"
+                    android:onClick="login_alert"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member ID "
+                        android:id="@+id/txt_memID1"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="#4C4130"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TTP3235"
+                        android:id="@+id/txt_memID2"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/fieldCountry"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".42"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/dwr_txt1"
+                    android:src="@drawable/icon"
+                    android:onClick="tap_fun"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Tap To Plant"
+
+                        android:id="@+id/ttp_txt1"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                    android:textSize="33dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="11dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Turn onn your GPS"
+                    android:id="@+id/locn_txt"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#4C4130"
+                    android:textStyle="bold"
+                    android:textSize="16.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".6"
+                android:paddingTop="70dp"
+                android:id="@+id/ppl_options_layout">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="-25dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:onClick="awards_fun"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/opt_img1"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/award"
+                            android:layout_marginLeft="-5dp"
+                            android:onClick="awards_fun" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NGO Masters "
+                            android:id="@+id/txt_opt1"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="my_task_fun">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/opt_img2"
+                            android:src="@drawable/task1"
+                            android:onClick="my_task_fun" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Task"
+                            android:id="@+id/txt_opt2"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textIsSelectable="false"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4"></LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="completed_task_fun">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/opt_img3"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/task2"
+                            android:onClick="completed_task_fun" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Completed"
+                            android:id="@+id/txt_opt3"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:visibility="gone"
+        android:id="@+id/hom_div2"
+        android:nestedScrollingEnabled="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Turn on the GPS / Provide location"
+            android:id="@+id/gps_button"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="gps_onn_fun" />
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:id="@+id/scrollView2" >
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/wall22"
+                    android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="13dp"
+                            android:id="@+id/top_name_edit1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:id="@+id/txt_req11"
+                                android:layout_gravity="right"
+                                android:textColor="#FFFE4747"
+                                android:visibility="visible"
+                                android:gravity="right" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:id="@+id/name_edit1"
+                                android:background="@drawable/border_edittxt"
+                                android:hint=" Name "
+                                android:inputType="textCapSentences|textCapWords"
+                                android:paddingLeft="42dp"
+                                android:letterSpacing="0.02"
+                                android:lines="1"
+                                android:maxLength="30"
+                                android:layout_marginTop="18dp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="26dp"
+                        android:cropToPadding="false" />
+                        </RelativeLayout>
+
+                <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:id="@+id/top_mob_edit1">
+                    <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/mob_edit1"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:background="@drawable/border_edittxt"
+                                android:hint=" Mobile No "
+                                android:inputType="number"
+                                android:paddingLeft="42dp"
+                                android:letterSpacing="0.2"
+                                android:lines="1"
+                        android:maxLength="10"
+                        android:layout_marginTop="18dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:id="@+id/txt_req13"
+                        android:layout_gravity="right"
+                        android:textColor="#FFFE4747"
+                        android:visibility="visible"
+                        android:gravity="right" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="26dp"
+                        android:cropToPadding="false" />
+                        </RelativeLayout>
+
+                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="72dp"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingBottom="13dp"
+                                    android:id="@+id/top_mail_edit1">
+
+                            <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/mail_edit1"
+                                        android:background="@drawable/border_edittxt"
+                                        android:hint=" Email"
+                                        android:textCursorDrawable="@drawable/cursor"
+                                        android:inputType="textWebEmailAddress"
+                                        android:paddingLeft="42dp"
+                                        android:letterSpacing="0.02"
+                                        android:lines="1"
+                                android:maxLength="35"
+                                android:layout_marginTop="18dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="* enter a valid email"
+                        android:id="@+id/txt_req12"
+                        android:layout_gravity="right"
+                        android:textColor="#FFFE4747"
+                        android:visibility="gone"
+                        android:gravity="right" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mail"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="26dp"
+                        android:cropToPadding="false" />
+
+                        </RelativeLayout>
+
+                <RelativeLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp">
+
+
+                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/desc_edit1"
+                                        android:background="@drawable/border_edittxt"
+                                        android:hint=" Description"
+                                        android:inputType="textMultiLine"
+                                        android:paddingLeft="42dp"
+                                        android:paddingRight="10dp"
+                                        android:textCursorDrawable="@drawable/cursor"
+                                        android:gravity="top|left"
+                                        android:paddingTop="10dp"
+                                        android:maxLines="4"
+                                        android:lines="4"
+                                        android:letterSpacing="0.02"
+                                android:maxLength="150"
+                                android:minLines="4"
+                                android:layout_marginBottom="10dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/detail"
+                        android:id="@+id/imageView13"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:text="OK"
+                    android:id="@+id/ok_butn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="tap_fun"
+                    android:background="@drawable/border_button"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:visibility="gone"
+                    android:id="@+id/space1" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

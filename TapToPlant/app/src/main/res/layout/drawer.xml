@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#6EC05D"
+        android:clickable="true"
+        android:layout_weight=".35"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView12"
+            android:src="@drawable/refresh"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="-15dp"
+            android:onClick="refresh_fun"
+            android:padding="12dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Refresh"
+            android:id="@+id/refresh"
+            android:layout_gravity="right"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-5dp"
+            android:textSize="14dp"
+            android:onClick="refresh_fun" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/icon"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap to Plant"
+            android:id="@+id/dwr_txt1"
+            android:gravity="right"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:layout_weight=".65"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Task"
+            android:id="@+id/txt_ham1"
+            android:gravity="center_vertical|bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="14dp"
+            android:textColor="#FF6B655A"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/border_award"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:onClick="all_task_fun"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/dwr_icn2"
+                android:src="@drawable/task1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Task"
+                android:id="@+id/dwr_txt2"
+                android:paddingLeft="20dp"
+                android:textColor="#FF6B655A"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/border_award"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:onClick="my_task_fun"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/dwr_icn3"
+                android:src="@drawable/task2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Task"
+                android:id="@+id/dwr_txt3"
+                android:paddingLeft="20dp"
+                android:textColor="#FF6B655A"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/border_award"
+            android:onClick="completed_task_fun"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/dwr_icn4"
+                android:src="@drawable/task2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completed Task"
+                android:id="@+id/dwr_txt4"
+                android:paddingLeft="20dp"
+                android:textColor="#FF6B655A"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Extras"
+            android:id="@+id/txt_ham2"
+            android:gravity="center_vertical|bottom"
+            android:paddingLeft="14dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FF6B655A"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/border_award"
+            android:onClick="ngo_master_fun"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:src="@drawable/award" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NGO Masters"
+                android:id="@+id/dwr_txt5"
+                android:paddingLeft="20dp"
+                android:textColor="#FF6B655A"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

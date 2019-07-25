@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/wall2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* "
+            android:id="@+id/alrt1_req"
+            android:layout_gravity="right"
+            android:textColor="@color/red"
+            android:paddingBottom="2dp"
+            android:paddingRight="20dp"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location :"
+                android:id="@+id/alrt1_txt"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/green"
+                android:layout_marginRight="5dp"
+                android:textSize="16dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alrt1_edit"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_edittxt"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:maxLines="4"
+                android:textSize="15dp"
+                android:nestedScrollingEnabled="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:id="@+id/alrt1_btn"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="#00ffffff"
+            android:textColor="@color/brown"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

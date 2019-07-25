@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/wall2"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Memeber ."
+            android:id="@+id/alert_txt1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/green"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* "
+            android:id="@+id/alrt1_req"
+            android:layout_gravity="right"
+            android:textColor="@color/red"
+            android:paddingBottom="2dp"
+            android:paddingRight="20dp"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_edit"
+                android:layout_weight=".6"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_edittxt"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:textSize="15dp"
+                android:nestedScrollingEnabled="true"
+                android:layout_marginLeft="15dp"
+                android:hint="User Id"
+                android:maxLength="7" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Login"
+                android:id="@+id/alert_btn"
+                android:layout_weight=".4"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/border_button"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new Account .. !"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#4C4130"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:autoText="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/alert_txt2"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/border_award"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/img_dp"
+            android:src="@drawable/task_dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Date :"
+                    android:id="@+id/tdate_txt1"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".4"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Location :"
+                    android:id="@+id/tdate_txt2"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".6"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Status :"
+                    android:id="@+id/tstatus_txt1"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".4"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Location :"
+                    android:id="@+id/tstatus_txt2"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".6"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Location :"
+                    android:id="@+id/tloc_txt1"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".4"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Location :"
+                    android:id="@+id/tloc_txt2"
+                    android:gravity="top|center_vertical"
+                    android:textColor="#FF6B655A"
+                    android:layout_weight=".6"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

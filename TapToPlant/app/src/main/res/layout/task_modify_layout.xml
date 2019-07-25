@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Modify"
+            android:id="@+id/task_txt"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#6EC05D"
+            android:paddingTop="20dp"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_weight=".5"
+        android:scrollIndicators="none"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:background="@drawable/border_award"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Name :"
+                    android:id="@+id/tm_name1"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#665e51"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="New Text"
+                    android:id="@+id/tm_name2"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:textSize="14.5dp"
+                    android:textColor="#716a60"
+                    android:paddingRight="10dp"
+                    android:lines="1"
+                    android:inputType="textCapCharacters"
+                    android:background="@drawable/border_edittxt2"
+                    android:autoText="false"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="30"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:background="@drawable/border_award"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Mob No :"
+                    android:id="@+id/tm_mob1"
+                    android:layout_weight=".3"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="#665e51"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="New Text"
+                    android:id="@+id/tm_mob2"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:textSize="14.5dp"
+                    android:textColor="#716a60"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/border_edittxt2"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="10"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:background="@drawable/border_award"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Mail ID : "
+                    android:id="@+id/tm_mail1"
+                    android:layout_weight=".3"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="#665e51"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="New Text"
+                    android:id="@+id/tm_mail2"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:textSize="14.5dp"
+                    android:textColor="#716a60"
+                    android:paddingRight="10dp"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:background="@drawable/border_edittxt2"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="35"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/border_award"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tm_desc1"
+                    android:layout_weight=".3"
+                    android:paddingLeft="15dp"
+                    android:text="Details :"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:gravity="top"
+                    android:textColor="#665e51"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/tm_desc2"
+                    android:layout_weight=".6"
+                    android:gravity="top"
+                    android:textSize="14.5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#716a60"
+                    android:paddingRight="10dp"
+                    android:lines="4"
+                    android:background="@drawable/border_edittxt2"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/border_award"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Location :"
+                    android:id="@+id/tm_loc1"
+                    android:layout_weight=".3"
+                    android:paddingLeft="15dp"
+                    android:gravity="top"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#665e51"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/tm_loc2"
+                    android:layout_weight=".6"
+                    android:gravity="top|center_vertical"
+                    android:textSize="14.5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#716a60"
+                    android:paddingRight="10dp"
+                    android:lines="4"
+                    android:background="@drawable/border_edittxt2"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Submit"
+                    android:id="@+id/tsk_submit"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:background="@drawable/border_button"
+                    android:textColor="#ffffff"
+                    android:onClick="submit_fun" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap To Plant"
+            android:id="@+id/ttp_txt3"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35dp"
+            android:textColor="#6EC05D"
+            android:layout_marginTop="-20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 3 Rankers in NGO"
+            android:id="@+id/txt_title_win"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            android:textColor="#665e51"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_award"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:background="@drawable/border_award"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:src="@drawable/gold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Abdul Rahman"
+                    android:id="@+id/txt_win1"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#6EC05D"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chennai"
+                    android:id="@+id/txt_win11"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#665e51" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_award"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView7"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:src="@drawable/test3" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Usaid Salman"
+                    android:id="@+id/txt_win2"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#6EC05D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chennai"
+                    android:id="@+id/txt_win22"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#665e51"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:background="@drawable/border_award"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:src="@drawable/test2" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Rohit Sharma"
+                    android:id="@+id/txt_win3"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#6EC05D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chennai"
+                    android:id="@+id/txt_win33"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#665e51" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

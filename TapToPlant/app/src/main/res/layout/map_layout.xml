@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6EC05D">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Location Map"
+            android:id="@+id/loc_txt"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="-10dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/map_relative">
+
+        <include layout="@layout/map"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn onn your GPS"
+            android:id="@+id/turn_txt"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#4C4130"
+            android:textSize="16.5dp"
+            android:onClick="refresh" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:text="Refresh"
+            android:id="@+id/turn_btn"
+            android:layout_below="@+id/turn_txt"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/border_button"
+            android:layout_marginTop="4dp"
+            android:onClick="refresh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".21"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/dir_layout"
+        android:visibility="visible">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Get Route"
+            android:id="@+id/dir_btn"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".21"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/dis_layout"
+        android:visibility="gone"
+        android:paddingRight="4dp"
+        android:paddingLeft="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Distance :"
+                android:id="@+id/dist_txt1"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textColor="#4C4130"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0 Km"
+                android:id="@+id/dist_txt"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:textColor="#4C4130"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Duration :"
+                android:id="@+id/dur_txt1"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#4C4130" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0 min"
+                android:id="@+id/dur_txt"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:textSize="14dp"
+                android:textColor="#4C4130" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

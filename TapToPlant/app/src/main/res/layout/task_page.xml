@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap To Plant"
+            android:id="@+id/ttp_txt4"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35dp"
+            android:textColor="#6EC05D"
+            android:layout_marginTop="-20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigned Task"
+        android:id="@+id/assign_txt1"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#665e51"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_award"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No task is Available "
+        android:id="@+id/txt_no_task"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="18dp"
+        android:visibility="visible"
+        android:paddingBottom="60dp"
+        android:textStyle="normal"
+        android:textColor="#888276" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_listView"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="5dp"
+        android:visibility="visible" />
+</LinearLayout>

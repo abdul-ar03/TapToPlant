@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#6EC05D"
+        android:visibility="visible"
+        android:id="@+id/frag1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/fragment_content"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView11"
+                android:src="@drawable/icon"
+                android:onClick="tap_fun"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Tap To Plant"
+                android:id="@+id/s_txt_1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="11dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AR Developments"
+            android:id="@+id/s_txt_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-50dp"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/wall2"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/frag2"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Memeber"
+            android:id="@+id/s_txt_3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/green"
+            android:textSize="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/s_txt_4"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_edittxt"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:textSize="15dp"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginLeft="30dp"
+            android:hint="User Id"
+            android:maxLength="7"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:id="@+id/s_btn"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:onClick="login_fun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:id="@+id/s_txt_5"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/green"
+            android:textSize="18dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="14dp"
+            android:onClick="create_new_fun" />
+    </LinearLayout>
+
+</LinearLayout>

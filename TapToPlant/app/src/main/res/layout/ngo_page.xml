@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wall2">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#6EC05D"
+                android:weightSum="1"
+                android:id="@+id/actionbar">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/ham_icon"
+                    android:padding="7dp"
+                    android:onClick="ham_fun" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/ab_title"
+                    android:textColor="#ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:textSize="16dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="LogOut"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:id="@+id/logout_txt"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:textColor="#ffffff"
+                    android:onClick="logout_fun"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:id="@+id/list_layout">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/ngo_listview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone"
+                android:id="@+id/empty_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No task Available .. !!"
+                    android:id="@+id/empty_task"
+                    android:textColor="#FF6B655A"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/award_layout"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top 3 Rankers in NGO"
+                    android:textSize="22dp"
+                    android:textAlignment="center"
+                    android:textColor="#665e51"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_award"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:id="@+id/award_txt" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/border_award"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginBottom="21dp"
+                        android:src="@drawable/gold" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Abdul Rahman"
+                            android:id="@+id/win_txt1"
+                            android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="18dp"
+                            android:textColor="#6EC05D"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chennai"
+                            android:id="@+id/win_txt11"
+                            android:textSize="14dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginRight="20dp"
+                            android:textColor="#665e51" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border_award"
+                    android:layout_marginBottom="5dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginBottom="21dp"
+                        android:src="@drawable/test3" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Abdul Rahman"
+                            android:id="@+id/win_txt2"
+                            android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="18dp"
+                            android:textColor="#6EC05D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chennai"
+                            android:id="@+id/win_txt22"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginRight="20dp"
+                            android:textColor="#665e51"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/border_award"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginBottom="21dp"
+                        android:src="@drawable/test2" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Abdul Rahman"
+                            android:id="@+id/win_txt3"
+                            android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="18dp"
+                            android:textColor="#6EC05D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chennai"
+                            android:id="@+id/win_txt33"
+                            android:textSize="14dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginRight="20dp"
+                            android:textColor="#665e51" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/drawer_div1"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+    <include layout="@layout/drawer"></include>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+    </LinearLayout>

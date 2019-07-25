@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_light">#ffffff</color>
+    <color name="legacy_light_primary">#ffffff</color>
+    <color name="brown">#FF4C4130</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#6EC05D</color>
+    <color name="red">#FFFE4747</color>
+    <color name="t_green">#6EC05D</color>
+    <color name="t_orange">#ffa500</color>
+    <color name="t_red">#ff1919</color>
+    <color name="grey">#D3D3D3</color>
+
+</resources>

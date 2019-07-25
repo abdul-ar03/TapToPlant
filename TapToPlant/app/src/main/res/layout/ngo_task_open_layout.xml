@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Details "
+            android:id="@+id/task_txt"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="-10dp"
+            android:textSize="25dp"
+            android:textColor="#6EC05D" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@drawable/border_award"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Name :"
+            android:id="@+id/tm_name1"
+            android:layout_weight=".3"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:paddingLeft="15dp"
+            android:textColor="#665e51"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/tm_name2"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+            android:textSize="14.5dp"
+            android:textColor="#716a60"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@drawable/border_award"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Mob No :"
+            android:id="@+id/tm_mob1"
+            android:layout_weight=".3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textColor="#665e51"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/tm_mob2"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+            android:textSize="14.5dp"
+            android:textColor="#716a60"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@drawable/border_award"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Mail ID : "
+            android:id="@+id/tm_mail1"
+            android:layout_weight=".3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textColor="#665e51"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/tm_mail2"
+            android:layout_weight=".6"
+            android:gravity="center_vertical"
+            android:textSize="14.5dp"
+            android:textColor="#716a60"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:background="@drawable/border_award"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Location :"
+            android:id="@+id/tm_loc1"
+            android:layout_weight=".3"
+            android:paddingLeft="15dp"
+            android:gravity="top"
+            android:textSize="15dp"
+            android:paddingTop="15dp"
+            android:textColor="#665e51"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/tm_loc2"
+                android:layout_weight=".6"
+                android:gravity="top|center_vertical"
+                android:textSize="14.5dp"
+                android:paddingTop="10dp"
+                android:textColor="#6EC05D"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView20"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/map_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:onClick="map_activity"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:background="@drawable/border_award"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tm_desc1"
+            android:layout_weight=".3"
+            android:paddingLeft="15dp"
+            android:text="Details :"
+            android:textSize="15dp"
+            android:paddingTop="15dp"
+            android:gravity="top"
+            android:textColor="#665e51"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/tm_desc2"
+            android:layout_weight=".6"
+            android:gravity="top"
+            android:textSize="14.5dp"
+            android:paddingTop="10dp"
+            android:textColor="#716a60"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/bottom1"
+        android:visibility="gone">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take the task"
+            android:id="@+id/button"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="13.5dp"
+            android:onClick="take_task_fun" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/bottom2"
+        android:visibility="gone">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Code"
+            android:id="@+id/button2"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="13.5dp"
+            android:onClick="insert_code_fun"
+            android:layout_marginRight="22dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quit the task"
+            android:id="@+id/button3"
+            android:background="@drawable/border_button"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="13.5dp"
+            android:onClick="quit_task_fun"
+            android:layout_marginLeft="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/bottom3"
+        android:visibility="gone" >
+
+    </LinearLayout>
+
+</LinearLayout>
